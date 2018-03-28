@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yellowstone"
+    tools:context="com.example.android.yellowstonequizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightL"
+            android:contentDescription="@null"
+            android:scaleType="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginXL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginStart="@dimen/marginXL"
+            android:layout_marginTop="@dimen/marginL"
+            android:gravity="center"
+            android:text="@string/quiz_name"
+            android:textAllCaps="true"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="@dimen/textXL"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginStart="@dimen/marginXL"
+            android:text="@string/Q1"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="@dimen/textL"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/geyser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q1A1"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/supervolcano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q1A2"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/mountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q1A3"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginStart="@dimen/marginXL"
+            android:text="@string/Q2"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="@dimen/textL"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/wyoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q2A1"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/idaho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q2A2"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/utah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q2A3"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/colorado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q2A4"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/montana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q2A5"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginRight="@dimen/marginXL"
+            android:text="@string/Q3"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="@dimen/textL"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q3A1"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q3A2"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q3A3"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q3A4"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginM"
+                android:layout_marginLeft="@dimen/marginXL"
+                android:layout_marginStart="@dimen/marginXL"
+                android:text="@string/Q3A5"
+                android:textSize="@dimen/textM"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginRight="@dimen/marginXL"
+            android:text="@string/Q4"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="@dimen/textL"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginRight="@dimen/marginXL"
+            android:hint="@string/hint"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginRight="@dimen/marginXL"
+            android:layout_marginTop="@dimen/marginXL"
+            android:onClick="onScoreButtonClick"
+            android:text="@string/button_calculate" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/marginL"
+            android:layout_marginLeft="@dimen/marginXL"
+            android:layout_marginRight="@dimen/marginXL"
+            android:onClick="onResetButtonClick"
+            android:text="@string/button_reset" />
+    </LinearLayout>
+</ScrollView>
